@@ -7,5 +7,9 @@ mv /tmp/venus-minisnmpd-main /data/mini-snmpd
 /data/mini-snmpd/init.sh
 ```
 
-### Used:
+### To Do
+- Testing
+- Config file for SNMP attributes (currently hardcoded)
+
+### Using
 https://github.com/troglobit/mini-snmpd/
