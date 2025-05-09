@@ -1,0 +1,5 @@
+#!/bin/sh
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+exec 2>&1
+$SCRIPT_DIR/../sbin/mini-snmpd -D "Venus OS" -L "Venus_Dev" -C "ruth <root@localhost.localdomain>" -d '/data' -i eth0
