@@ -15,3 +15,4 @@ make -j2
 make install-strip
 cd $SCRIPT_DIR
 rm -r /tmp/mini-snmpd-1.6
+chmod +x /data/mini-snmpd/install.sh
