@@ -19,4 +19,4 @@ then
     echo >> $filename
 fi
 
-grep -qxF "$SCRIPT_DIR/install.sh" $filename || echo "/bin/bash $SCRIPT_DIR/install.sh" >> $filename
+grep -qxF "$SCRIPT_DIR/install.sh" $filename || echo "$SCRIPT_DIR/install.sh" >> $filename
