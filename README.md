@@ -10,6 +10,7 @@ mv /tmp/venus-mini-snmpd-main /data/mini-snmpd
 chmod +x /data/mini-snmpd/init.sh
 /data/mini-snmpd/init.sh
 ```
+finally run `install.sh` to activate
 
 ## manual install
 ```
@@ -29,9 +30,12 @@ cd ~
 rm -r /tmp/mini-snmpd-1.6
 rm mini-snmpd-1.6.tar.gz
 ```
-- add **install.sh** and **service/run** in the directory **/data/mini-snmpd** and make them executable
+
+### then either
+- add **install.sh** and **service/run** from here to the directory **/data/mini-snmpd** and make them executable
 - run `install.sh` (or place it in /data/rc.local and reboot)
 
+### or
 if you like, instead of using the scripts from here you can also directly add a line for _mini-snmpd_ in /data/rc.local like this:
 ```
 /data/mini-snmpd/sbin/mini-snmpd -D "Venus OS" -L "Cerbo GX" -C "root <root@localhost.localdomain>" -d '/data,/run/media/mmcblk0p1' -i eth0,wifi0
