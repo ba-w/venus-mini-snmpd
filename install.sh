@@ -22,4 +22,4 @@ then
     echo >> $RC_LOCAL_FILE
 fi
 
-grep -qxF "$SCRIPT_DIR/install.sh" $RC_LOCAL_FILE || echo "/bin/bash $SCRIPT_DIR/install.sh" >> $RC_LOCAL_FILE
+grep -qxF "$SCRIPT_DIR/install.sh" $RC_LOCAL_FILE || echo "$SCRIPT_DIR/install.sh" >> $RC_LOCAL_FILE
